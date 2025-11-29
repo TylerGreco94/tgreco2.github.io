@@ -29,7 +29,10 @@ a {
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-    background-image: url("logo.png");
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .site-title {
     font-size: 2em;
@@ -43,17 +46,16 @@ a {
     justify-content: space-around;
     border-bottom: 1px solid #7292f3;
     display: flex;
+    
 }
 .main-nav a {
     padding: 5px 15px;
 }
 .main-nav a:hover {
     background-color: #f49465;
-    color: #ffffff;
-    border-radius: 10px;
-}
-.main-nav a:visited {
     color: #7292f3;
+    border-radius: 10px;
+    transition: color 2s ease-out;
 }
 .main-nav a:link {
     color: #740209
@@ -69,17 +71,22 @@ a {
 }
 .image-placeholder {
     width: 100%;
-    height: 200px;
-    boarder 1px solid #7292f3;
+    height: 250px;
+    border: 1px solid #7292f3;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-image: url(Cover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 .about-section {
     display: flex;
     gap: 20px;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 .portrait-placeholder {
     width: 150px;
@@ -89,7 +96,10 @@ a {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url("portrait.jpg");
+    background-image: url(portrait.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .bio-content {
     flex: 1;
@@ -98,7 +108,7 @@ a {
     margin-top: 0;
 }
 .bio-content p {
-    height: 80;
+    height: 80px;
     width: 80%;
     margin-bottom: 10px;
 }
@@ -110,7 +120,7 @@ a {
 .content-box {
     flex-basis: 33%;
 }
-.box-placeholder {
+.recipe-placeholder {
     width: 100%;
     height: 200px;
     border: 1px solid #7292f3;
@@ -118,8 +128,88 @@ a {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-image: url(recipes.jpg);
 }
-
+.recipe-link {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery-placeholder {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #7292f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;  
+    background-image: url(single\ leaf.jpg);
+}
+.gallery-link {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.store-placeholder {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #7292f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;  
+    background-image: url(utensils.jpg);
+}
+.store-link {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.recipe-link:hover,
+.gallery-link:hover,
+.store-link:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+iframe {
+    float: center;
+    margin: 5%;
+}
 /*footer*/
 .site-footer {
     display: flex;
@@ -132,4 +222,33 @@ a {
 }
 .footer-links a {
     margin-left: 20px;
+}
+
+/*contact form*/
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input {
+    margin-bottom: 1em;
+}
+select {
+    margin-bottom: 1em;
+}
+textarea {
+    margin-bottom: 2em;
+}
+button {
+    width: 400px;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #740209;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
 }
