@@ -201,15 +201,38 @@ a {
     border-radius: 5px;
     cursor: pointer;
 }
-.recipe-link:hover,
-.gallery-link:hover,
 .store-link:hover {
-    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 50%;
+    cursor: pointer;
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 10px;
+    font-family: Georgia;
+    font-style: italic;
+}
+th,td{
+    border: 1px solid #740209;
+    padding: 12px;
+    text-align: center;
+}
+th{
+    background-color: #A6C875;
+    color: white;
+    font-weight: bold;
+}
+/*Video Section*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 iframe {
     float: center;
     margin: 5%;
 }
+
 /*footer*/
 .site-footer {
     display: flex;
@@ -251,4 +274,122 @@ button {
     cursor: pointer;
     display: block;
     margin: 0 auto; 
+}
+
+/*Store*/
+.link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 33px;
+}
+.link-bakeware img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-image: url(bakeware.jpg);
+    margin-top: 10px;
+}
+.link-utensils img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-image: url(store-utensils.jpg);
+    margin-top: 10px;
+}
+.link-jars img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-image: url(weck.jpg);
+    margin-top: 10px;
+}
+.link-jars :hover {
+    opacity: 50%;
+    cursor: pointer;
+    transform: scale(1.09);
+}
+.link-utensils :hover {
+    opacity: 50%;
+    cursor: pointer;
+    transform: scale(1.09);
+}
+.link-bakeware :hover {
+    opacity: 50%;
+    cursor: pointer;
+    transform: scale(1.09);
+}
+/*Gallery*/
+.product-grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+.jalapeno-placeholder {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #7292f3;
+    background-image: url(jalapeno.jpg);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.classic-placeholder {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #7292f3;
+    background-image: url(two\ leaf.jpg);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sandwich-placeholder {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #7292f3;
+    background-image: url(sandwhich.jpg);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cookies-placeholder {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #7292f3;
+    background-image: url(cookies.jpg);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
